@@ -11,7 +11,7 @@ app.get("/salva", async(req, res) => {
     try{
         const dados: pessoanode[] = JSON.parse(fs.readFileSync('./src/data.json', 'utf8'));
         console.time('salvando o array todo')
-        await pessoaRepo.save(dados);
+        pessoaRepo.save(dados);
         console.timeEnd('salvando o array todo')
         res.status(200);
     } catch(err) {

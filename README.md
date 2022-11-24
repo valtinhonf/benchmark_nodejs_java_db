@@ -7,11 +7,31 @@ Este prójeto visa realizar inserções em um banco de dados postgres. Os dois p
 
 O resultado já era esperado de que o Java seria um pouco mais rápido do que o nodejs e com menos falhas, devido ao fato de ser uma linguagem híbrida (compilada e interpretada).
 
-**Java**
+### Java ###
 Usando a versão 17 LTS + Spring 5.7
 
-**NodeJS**
+### NodeJS ###
 Escrito em typescript, usando a versão 19.1 + Express + TypeORM;
 
-**autocannon**
+**Executar**
+`npm run dev`
+
+### autocannon ###
 Projeto usando a lib de mesmo nome, com o objetivo de realizar testes de carga (via API) com centenas ou milhares de requisições simultâneas.
+
+**Executar**
+`node autocannon.js`
+
+### Banco de dados ###
+Como base de dados foi utilizado o Postgres
+
+#### Scripts ####
+
+**Limpando as tabelas**
+`delete from pessoanode;
+delete from pessoajava;`
+
+**Obtendo totais**
+`select 'node' as lang, count(*) from pessoanode
+union all
+select 'java' as lang, count(*) as java from pessoajava;`

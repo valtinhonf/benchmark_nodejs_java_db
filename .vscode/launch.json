@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-BenchmarkApplication<benchmark>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.benchmark.BenchmarkApplication",
+            "projectName": "benchmark",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
