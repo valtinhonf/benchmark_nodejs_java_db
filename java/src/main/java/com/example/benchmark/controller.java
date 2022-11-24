@@ -33,15 +33,15 @@ public class controller {
 
     @GetMapping("/salva/percorre")
     public ResponseEntity<?> salvaPercorrendoOArrayTodo(){
-        LocalTime ini = LocalTime.now();
+        // LocalTime ini = LocalTime.now();
         List<pessoajava> pessoas = pessoajava.carregaLista();
         for (pessoajava pessoa:pessoas) {
-            LocalTime inireg = LocalTime.now();
+            // LocalTime inireg = LocalTime.now();
             repo.save(pessoa);
-            System.out.println("Duração do registro: " + Duration.between(inireg, LocalTime.now()).toMillis());
+            // System.out.println("Duração do registro: " + Duration.between(inireg, LocalTime.now()).toMillis());
         }
-        TimeUnit timeunit;
-        System.out.println("Duração total: " + Duration.between(ini, LocalTime.now()).toMillis());
+        // TimeUnit timeunit;
+        // System.out.println("Duração total: " + Duration.between(ini, LocalTime.now()).toMillis());
         return ResponseEntity.ok().build();
     }
 }
