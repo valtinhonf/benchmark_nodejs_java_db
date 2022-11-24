@@ -56,5 +56,5 @@ async function java_salvando_percorrendo_array(){
 
 // nodejs_salvando_array_unicavez();
 // java_salvando_array_unicavez();
-//nodejs_salvando_percorrendo_array();
-java_salvando_percorrendo_array();
+nodejs_salvando_percorrendo_array();
+//java_salvando_percorrendo_array();
