@@ -47,7 +47,7 @@ async function java_salvando_percorrendo_array(){
         url: 'http://localhost:8080/salva/percorre',
         method: 'GET',
         connections: 1000, //default
-        pipelining: 1, // default
+        pipelining: 4, // default
         duration: 10 // default
     })
 
